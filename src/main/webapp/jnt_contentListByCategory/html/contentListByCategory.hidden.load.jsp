@@ -40,6 +40,6 @@
 <query:definition var="listQuery"
                   statement="select content.* from [${currentNode.properties['applyOn'].string}] as content
              where isdescendantnode(content,'${renderContext.site.path}')
-             and ${searchCategories[category.name]}
+             and (${searchCategories[category.name]})
              order by content.[jcr:lastModified] desc" limit="10"/>
 <c:set target="${moduleMap}" property="listQuery" value="${listQuery}"/>
