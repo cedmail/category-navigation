@@ -48,7 +48,7 @@
         <version>1.2-SNAPSHOT</version>
     </parent>
     <groupId>org.jahia.modules</groupId>
-    <artifactId>category-navigation</artifactId>
+    <artifactId>templates-category-navigation</artifactId>
     <name>Jahia Category Navigation</name>
     <packaging>war</packaging>
     <description>This is a custom module for running on a Jahia server.</description>
@@ -87,9 +87,9 @@
                             <Specification-Version>${project.version}</Specification-Version>
                             <Specification-Vendor>${jahia.manifest.vendor.name}</Specification-Vendor>
                             <package-name>${project.name}</package-name>
-                            <depends>Default Jahia Templates</depends>
+                            <depends>Default Jahia Templates,Jahia Intranet Templates</depends>
                             <root-folder>${project.artifactId}</root-folder>
-                            <module-type>module</module-type>
+                            <module-type>templatesSet</module-type>
                         </manifestEntries>
                     </archive>
                     <archiveClasses>true</archiveClasses>
